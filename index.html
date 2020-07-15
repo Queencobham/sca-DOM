@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Todo App</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row mt-5">
+				<form id="todo-form" class="mx-auto col-12 col-md-4">
+					<div class="card card-body">
+						<div class="form-group">
+							<label for="search">Search todos</label>
+							<input
+								class="form-control"
+								type="search"
+								name="search"
+								id="search"
+								class="d-block"
+								placeholder="Type to search..."
+							/>
+						</div>
+						<div class="form-group">
+							<label for="todo">What do you want to do?</label>
+							<input
+								class="form-control"
+								type="text"
+								name="todo"
+								id="todo"
+								class="d-block"
+								required
+								placeholder="E.g write new article..."
+							/>
+						</div>
+						<button type="submit" class="btn mt-5 btn-primary">Submit</button>
+					</form>
+
+					<div class="card card-body mt-5">
+						<ul class="list-group" id="todos">
+							<li class="list-group-item d-flex align-item-center w-100 justify-content-between">
+								Write something new...
+								<button type="button" class="btn delete-todo">&times;</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>	
+		</div>
+
+    <script src="main.js"></script>
+	</body>
+</html>
